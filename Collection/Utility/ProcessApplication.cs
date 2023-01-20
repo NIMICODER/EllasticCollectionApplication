@@ -56,6 +56,7 @@ namespace Collection.Utility
                         case (int)ProductChoice.DisplayAllProduct:
                             DisplayAllProduct();
                             DisplayOptions();
+                            Console.Clear();
                             break;
                         case (int)ProductChoice.SpecifyProduct:
                             SpecifyProduct();
@@ -71,6 +72,10 @@ namespace Collection.Utility
                             DisplayOptions();
                             break;
                     }
+                } else
+                {
+                    Console.WriteLine("Input is incorrect!");
+                    DisplayOptions();
                 }
             }
             catch
