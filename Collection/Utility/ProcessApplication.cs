@@ -40,12 +40,11 @@ namespace Collection.Utility
 
         public void SpecifyProduct()
         {
-            Console.WriteLine("Enter the Product to display");
+            Console.WriteLine("Implementation coming soon");
         }
         void DisplayOptions()
         {
-            try
-            {
+            
 
                 Console.WriteLine("1. Display all Products. \n2. Specify Products you want to display. \n3.  Exit.");
                 string Option = Console.ReadLine() ?? string.Empty;
@@ -67,7 +66,6 @@ namespace Collection.Utility
                             DisplayOptions();
                             break;
                         default:
-                            Console.Clear();
                             Console.WriteLine("Input is incorrect");
                             DisplayOptions();
                             break;
@@ -77,11 +75,8 @@ namespace Collection.Utility
                     Console.WriteLine("Input is incorrect!");
                     DisplayOptions();
                 }
-            }
-            catch
-            {
-                Console.WriteLine("please input Number");
-            }
         }
+            
     }
 }
+
